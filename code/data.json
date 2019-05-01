@@ -1,0 +1,654 @@
+{
+    "anime": [{
+        "id": 1,
+        "title": "Dororo",
+        "producer": "MAPPA, Tezuka Productions",
+        "episodes": "24 eps",
+        "airTime": "Jan 7, 2019, 22:30 (JST)",
+        "rating": "8.54"
+    }, {
+        "id": 2,
+        "title": "Shingeki no Kyojin Season 3 Part 2",
+        "producer": "Wit Studio",
+        "episodes": "10 eps",
+        "airTime": "Apr 29, 2019, 00:10 (JST)",
+        "rating": "9.11"
+    }, {
+        "id": 3,
+        "title": "Fairy Gone",
+        "producer": "P.A. Works",
+        "episodes": "24 eps",
+        "airTime": "Apr 8, 2019, 00:00 (JST)",
+        "rating": "6.34"
+    }, {
+        "id": 4,
+        "title": "Nande Koko ni Sensei ga!?",
+        "producer": "tear-studio",
+        "episodes": "12 eps",
+        "airTime": "Apr 8, 2019, 01:05 (JST)",
+        "rating": "6.80"
+    }, {
+        "id": 5,
+        "title": "Mayonaka no Occult Koumuin",
+        "producer": "LIDENFILMS",
+        "episodes": "12 eps",
+        "airTime": "Apr 8, 2019, 00:30 (JST)",
+        "rating": "6.69"
+    }, {
+        "id": 6,
+        "title": "RobiHachi",
+        "producer": "Studio Comet",
+        "episodes": "12 eps",
+        "airTime": "Apr 8, 2019, 23:30 (JST)",
+        "rating": "6.23"
+    }, {
+        "id": 7,
+        "title": "Araiya-san!: Ore to Aitsu ga Onnayu de!?",
+        "producer": "Magic Bus",
+        "episodes": "? eps",
+        "airTime": "Apr 8, 2019, 01:00 (JST)",
+        "rating": "6.41"
+    }, {
+        "id": 8,
+        "title": "Hachigatsu no Cinderella Nine",
+        "producer": "TMS Entertainment",
+        "episodes": "? eps",
+        "airTime": "Apr 8, 2019, 01:35 (JST)",
+        "rating": "6.18"
+    }, {
+        "id": 9,
+        "title": "Namu Amida Butsu!: Rendai Utena",
+        "producer": "Asahi Production",
+        "episodes": "12 eps",
+        "airTime": "Apr 8, 2019, 22:30 (JST)",
+        "rating": "5.54"
+    }, {
+        "id": 10,
+        "title": "Jimoto ga Japan",
+        "producer": "Oddjob",
+        "episodes": "? eps",
+        "airTime": "Apr 8, 2019, 07:05 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 11,
+        "title": "Yasamura Yasashi no Yasashii Sekai",
+        "producer": "DLE",
+        "episodes": "16 eps",
+        "airTime": "Sep 2, 2016",
+        "rating": "5.52"
+    }, {
+        "id": 12,
+        "title": "Puzzle & Dragon",
+        "producer": "Studio Pierrot",
+        "episodes": "? eps",
+        "airTime": "Apr 2, 2018, 18:25 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 13,
+        "title": "Shimajirou no Wow!",
+        "producer": "The Answer Studio",
+        "episodes": "? eps",
+        "airTime": "Apr 2, 2012, 07:30 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 14,
+        "title": "Dragon Egg",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Nov 6, 2017, 17:00 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 15,
+        "title": "Otoppe",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Apr 3, 2017, 08:40 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 16,
+        "title": "Chara to Otamajakushi Shima",
+        "producer": "33 Collective",
+        "episodes": "40 eps",
+        "airTime": "Apr 2, 2018, 10:15 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 17,
+        "title": "Reizouko no Tsukenosuke!",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Oct 1, 2018, 07:05 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 18,
+        "title": "Black Clover",
+        "producer": "Studio Pierrot",
+        "episodes": "? eps",
+        "airTime": "Oct 3, 2017, 18:25 (JST)",
+        "rating": "7.00"
+    }, {
+        "id": 19,
+        "title": "Kono Yo no Hate de Koi wo Utau Shoujo YU-NO",
+        "producer": "feel.",
+        "episodes": "26 eps",
+        "airTime": "Apr 2, 2019, 23:00 (JST)",
+        "rating": "6.33"
+    }, {
+        "id": 20,
+        "title": "Diamond no Ace: Act II",
+        "producer": "Madhouse",
+        "episodes": "52 eps",
+        "airTime": "Apr 2, 2019, 17:55 (JST)",
+        "rating": "8.24"
+    }, {
+        "id": 21,
+        "title": "Cinderella Girls Gekijou: Climax Season",
+        "producer": "Gathering, Lesprit",
+        "episodes": "? eps",
+        "airTime": "Apr 2, 2019, 21:54 (JST)",
+        "rating": "6.46"
+    }, {
+        "id": 22,
+        "title": "Cinderella Girls Gekijou: Kayou Cinderella Theater 4th Season",
+        "producer": "Gathering, Lesprit",
+        "episodes": "? eps",
+        "airTime": "Apr 2, 2019, 21:54 (JST)",
+        "rating": "6.42"
+    }, {
+        "id": 23,
+        "title": "Shounen Ashibe: Go! Go! Goma-chan 4",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Apr 2, 2019, 18:45 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 24,
+        "title": "Uchi no Oochopus",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Jan 9, 2018, 17:20 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 25,
+        "title": "One Punch Man 2nd Season",
+        "producer": "J.C.Staff",
+        "episodes": "? eps",
+        "airTime": "Apr 10, 2019, 01:35 (JST)",
+        "rating": "8.08"
+    }, {
+        "id": 26,
+        "title": "Tate no Yuusha no Nariagari",
+        "producer": "Kinema Citrus",
+        "episodes": "25 eps",
+        "airTime": "Jan 9, 2019, 22:00 (JST)",
+        "rating": "8.36"
+    }, {
+        "id": 27,
+        "title": "Isekai Quartet",
+        "producer": "Studio PuYUKAI",
+        "episodes": "12 eps",
+        "airTime": "Apr 10, 2019, 00:30 (JST)",
+        "rating": "7.53"
+    }, {
+        "id": 28,
+        "title": "Kenja no Mago",
+        "producer": "Silver Link.",
+        "episodes": "12 eps",
+        "airTime": "Apr 10, 2019, 23:30 (JST)",
+        "rating": "7.60"
+    }, {
+        "id": 29,
+        "title": "Sewayaki Kitsune no Senko-san",
+        "producer": "Doga Kobo",
+        "episodes": "12 eps",
+        "airTime": "Apr 10, 2019, 22:30 (JST)",
+        "rating": "7.71"
+    }, {
+        "id": 30,
+        "title": "Yu\u2606Gi\u2606Oh! VRAINS",
+        "producer": "Studio Gallop",
+        "episodes": "? eps",
+        "airTime": "May 10, 2017, 18:25 (JST)",
+        "rating": "6.66"
+    }, {
+        "id": 31,
+        "title": "Strike Witches: 501 Butai Hasshin Shimasu!",
+        "producer": "-",
+        "episodes": "12 eps",
+        "airTime": "Apr 10, 2019, 00:45 (JST)",
+        "rating": "5.38"
+    }, {
+        "id": 32,
+        "title": "Mannaka no Rikkun@Kin Tele",
+        "producer": "Sakura Create",
+        "episodes": "? eps",
+        "airTime": "Jan 9, 2019, 07:30 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 33,
+        "title": "Neko no Nyagh: Nya Mis\u00e9rables",
+        "producer": "TMS Entertainment",
+        "episodes": "? eps",
+        "airTime": "Apr 3, 2019, 07:30 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 34,
+        "title": "Carole & Tuesday",
+        "producer": "Bones",
+        "episodes": "24 eps",
+        "airTime": "Apr 11, 2019, 00:55 (JST)",
+        "rating": "8.33"
+    }, {
+        "id": 35,
+        "title": "Karakuri Circus",
+        "producer": "Studio VOLN",
+        "episodes": "36 eps",
+        "airTime": "Oct 11, 2018, 22:30 (JST)",
+        "rating": "7.15"
+    }, {
+        "id": 36,
+        "title": "Yatogame-chan Kansatsu Nikki",
+        "producer": "Creators in Pack, Saetta",
+        "episodes": "? eps",
+        "airTime": "Apr 4, 2019, 19:53 (JST)",
+        "rating": "6.13"
+    }, {
+        "id": 37,
+        "title": "Hangyakusei Million Arthur 2nd Season",
+        "producer": "J.C.Staff",
+        "episodes": "11 eps",
+        "airTime": "Apr 4, 2019, 22:00 (JST)",
+        "rating": "6.42"
+    }, {
+        "id": 38,
+        "title": "Aikatsu Friends!: Kagayaki no Jewel",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Apr 4, 2019, 18:25 (JST)",
+        "rating": "6.97"
+    }, {
+        "id": 39,
+        "title": "Usagi no Matthew",
+        "producer": "Kachidoki Studio",
+        "episodes": "? eps",
+        "airTime": "Apr 5, 2018, 21:54 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 40,
+        "title": "Kirakira Happy\u2605Hirake! Cocotama",
+        "producer": "OLM",
+        "episodes": "? eps",
+        "airTime": "Sep 6, 2018, 17:55 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 41,
+        "title": "B Rappers Street",
+        "producer": "Pie in the sky",
+        "episodes": "? eps",
+        "airTime": "Apr 11, 2019, 07:05 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 42,
+        "title": "TV Yarou Nanaana: Wakuwaku Doukutsu Land",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Apr 11, 2019, 07:30 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 43,
+        "title": "Kyou mo Tsuno ga Aru",
+        "producer": "MMDGP",
+        "episodes": "? eps",
+        "airTime": "Feb 21, 2019, 21:54 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 44,
+        "title": "Ice Kuritarou",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Oct 12, 2017, 01:39 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 45,
+        "title": "Bungou Stray Dogs 3rd Season",
+        "producer": "Bones",
+        "episodes": "12 eps",
+        "airTime": "Apr 12, 2019, 22:30 (JST)",
+        "rating": "8.34"
+    }, {
+        "id": 46,
+        "title": "Crayon Shin-chan",
+        "producer": "Shin-Ei Animation",
+        "episodes": "? eps",
+        "airTime": "Apr 13, 1992, 19:30 (JST)",
+        "rating": "7.74"
+    }, {
+        "id": 47,
+        "title": "Sarazanmai",
+        "producer": "Lapin Track, MAPPA",
+        "episodes": "11 eps",
+        "airTime": "Apr 12, 2019, 00:55 (JST)",
+        "rating": "7.19"
+    }, {
+        "id": 48,
+        "title": "Doraemon (2005)",
+        "producer": "Shin-Ei Animation, Studio Pierrot",
+        "episodes": "? eps",
+        "airTime": "Apr 22, 2005, 19:00 (JST)",
+        "rating": "7.55"
+    }, {
+        "id": 49,
+        "title": "Inazuma Eleven: Orion no Kokuin",
+        "producer": "OLM",
+        "episodes": "? eps",
+        "airTime": "Oct 5, 2018, 17:55 (JST)",
+        "rating": "7.25"
+    }, {
+        "id": 50,
+        "title": "Bakumatsu: Crisis",
+        "producer": "Studio Deen",
+        "episodes": "? eps",
+        "airTime": "Apr 5, 2019, 01:58 (JST)",
+        "rating": "5.64"
+    }, {
+        "id": 51,
+        "title": "Sore Ike! Anpanman",
+        "producer": "TMS Entertainment",
+        "episodes": "? eps",
+        "airTime": "Oct 3, 1988, 16:20 (JST)",
+        "rating": "6.60"
+    }, {
+        "id": 52,
+        "title": "Beyblade Burst Gachi",
+        "producer": "OLM",
+        "episodes": "? eps",
+        "airTime": "Apr 5, 2019, 16:00 (JST)",
+        "rating": "6.40"
+    }, {
+        "id": 53,
+        "title": "Neko to Mata",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Apr 21, 2017, 01:25 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 54,
+        "title": "Youkai Watch!",
+        "producer": "OLM",
+        "episodes": "? eps",
+        "airTime": "Apr 5, 2019, 18:25 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 55,
+        "title": "Aware! Meisaku-kun",
+        "producer": "Pie in the sky",
+        "episodes": "? eps",
+        "airTime": "Apr 8, 2016, 18:20 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 56,
+        "title": "Mr. Shadow",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Jan 10, 2019, 01:25 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 57,
+        "title": "Daifuku-kun@Kin Tele",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Oct 5, 2018, 07:30 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 58,
+        "title": "Detective Conan",
+        "producer": "TMS Entertainment",
+        "episodes": "? eps",
+        "airTime": "Jan 8, 1996, 18:00 (JST)",
+        "rating": "8.25"
+    }, {
+        "id": 59,
+        "title": "Kimetsu no Yaiba",
+        "producer": "ufotable",
+        "episodes": "26 eps",
+        "airTime": "Apr 6, 2019, 23:30 (JST)",
+        "rating": "8.35"
+    }, {
+        "id": 60,
+        "title": "JoJo no Kimyou na Bouken Part 5: Ougon no Kaze",
+        "producer": "David Production",
+        "episodes": "39 eps",
+        "airTime": "Oct 6, 2018, 01:05 (JST)",
+        "rating": "8.80"
+    }, {
+        "id": 61,
+        "title": "Fruits Basket (2019)",
+        "producer": "TMS Entertainment",
+        "episodes": "? eps",
+        "airTime": "Apr 6, 2019, 01:23 (JST)",
+        "rating": "8.02"
+    }, {
+        "id": 62,
+        "title": "Midara na Ao-chan wa Benkyou ga Dekinai",
+        "producer": "Silver Link.",
+        "episodes": "? eps",
+        "airTime": "Apr 6, 2019, 02:10 (JST)",
+        "rating": "6.76"
+    }, {
+        "id": 63,
+        "title": "Hitoribocchi no Marumaru Seikatsu",
+        "producer": "C2C",
+        "episodes": "12 eps",
+        "airTime": "Apr 6, 2019, 02:25 (JST)",
+        "rating": "7.42"
+    }, {
+        "id": 64,
+        "title": "Senryuu Shoujo",
+        "producer": "Connect",
+        "episodes": "? eps",
+        "airTime": "Apr 6, 2019, 01:55 (JST)",
+        "rating": "7.23"
+    }, {
+        "id": 65,
+        "title": "Nobunaga-sensei no Osanazuma",
+        "producer": "Seven",
+        "episodes": "? eps",
+        "airTime": "Apr 6, 2019, 23:20 (JST)",
+        "rating": "5.79"
+    }, {
+        "id": 66,
+        "title": "Joshikausei",
+        "producer": "Seven",
+        "episodes": "? eps",
+        "airTime": "Apr 6, 2019, 23:15 (JST)",
+        "rating": "5.49"
+    }, {
+        "id": 67,
+        "title": "Mix",
+        "producer": "OLM",
+        "episodes": "? eps",
+        "airTime": "Apr 6, 2019, 17:30 (JST)",
+        "rating": "7.12"
+    }, {
+        "id": 68,
+        "title": "Chou Kadou Girl \u2159: Amazing Stranger",
+        "producer": "Studio A-CAT",
+        "episodes": "? eps",
+        "airTime": "Apr 6, 2019, 23:00 (JST)",
+        "rating": "5.85"
+    }, {
+        "id": 69,
+        "title": "Cardfight!! Vanguard (2018)",
+        "producer": "OLM",
+        "episodes": "52 eps",
+        "airTime": "May 5, 2018, 22:30 (JST)",
+        "rating": "7.12"
+    }, {
+        "id": 70,
+        "title": "Zoids Wild",
+        "producer": "OLM",
+        "episodes": "? eps",
+        "airTime": "Jul 7, 2018, 06:30 (JST)",
+        "rating": "5.66"
+    }, {
+        "id": 71,
+        "title": "Bonobono (2016)",
+        "producer": "Eiken",
+        "episodes": "? eps",
+        "airTime": "Apr 2, 2016, 04:52 (JST)",
+        "rating": "6.47"
+    }, {
+        "id": 72,
+        "title": "Shinkansen Henkei Robo Shinkalion The Animation",
+        "producer": "OLM",
+        "episodes": "? eps",
+        "airTime": "Jan 6, 2018, 07:00 (JST)",
+        "rating": "6.16"
+    }, {
+        "id": 73,
+        "title": "Neko no Robu",
+        "producer": "Kachidoki Studio",
+        "episodes": "? eps",
+        "airTime": "May 6, 2017, 06:30 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 74,
+        "title": "Tama & Friends: Uchi no Tama Shirimasenka?",
+        "producer": "Kachidoki Studio",
+        "episodes": "? eps",
+        "airTime": "Oct 1, 2016, 07:00 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 75,
+        "title": "Pikachin-Kit",
+        "producer": "OLM, Shin-Ei Animation",
+        "episodes": "? eps",
+        "airTime": "Jan 6, 2018, 09:30 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 76,
+        "title": "Kedama no Gonjirou",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Apr 6, 2019, 10:00 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 77,
+        "title": "One Piece",
+        "producer": "Toei Animation",
+        "episodes": "? eps",
+        "airTime": "Oct 20, 1999, 09:30 (JST)",
+        "rating": "8.53"
+    }, {
+        "id": 78,
+        "title": "Boruto: Naruto Next Generations",
+        "producer": "Studio Pierrot",
+        "episodes": "? eps",
+        "airTime": "Apr 5, 2017, 17:30 (JST)",
+        "rating": "6.74"
+    }, {
+        "id": 79,
+        "title": "Fairy Tail: Final Series",
+        "producer": "A-1 Pictures, Bridge, CloverWorks",
+        "episodes": "? eps",
+        "airTime": "Oct 7, 2018, 07:00 (JST)",
+        "rating": "8.22"
+    }, {
+        "id": 80,
+        "title": "Bokutachi wa Benkyou ga Dekinai",
+        "producer": "Arvo Animation, Silver",
+        "episodes": "13 eps",
+        "airTime": "Apr 7, 2019, 00:30 (JST)",
+        "rating": "7.12"
+    }, {
+        "id": 81,
+        "title": "Gunjou no Magmel",
+        "producer": "Pierrot Plus",
+        "episodes": "? eps",
+        "airTime": "Apr 7, 2019, 22:00 (JST)",
+        "rating": "7.03"
+    }, {
+        "id": 82,
+        "title": "Pokemon Sun & Moon",
+        "producer": "OLM",
+        "episodes": "? eps",
+        "airTime": "Nov 17, 2016, 18:00 (JST)",
+        "rating": "6.84"
+    }, {
+        "id": 83,
+        "title": "Shoumetsu Toshi",
+        "producer": "Madhouse",
+        "episodes": "12 eps",
+        "airTime": "Apr 7, 2019, 23:30 (JST)",
+        "rating": "5.60"
+    }, {
+        "id": 84,
+        "title": "Kono Oto Tomare!",
+        "producer": "Platinum Vision",
+        "episodes": "13 eps",
+        "airTime": "Apr 7, 2019, 01:00 (JST)",
+        "rating": "7.29"
+    }, {
+        "id": 85,
+        "title": "Gegege no Kitarou (2018)",
+        "producer": "Toei Animation",
+        "episodes": "? eps",
+        "airTime": "Apr 1, 2018, 09:00 (JST)",
+        "rating": "6.79"
+    }, {
+        "id": 86,
+        "title": "Star\u2606Twinkle Precure",
+        "producer": "Toei Animation",
+        "episodes": "? eps",
+        "airTime": "Feb 3, 2019, 08:30 (JST)",
+        "rating": "7.24"
+    }, {
+        "id": 87,
+        "title": "Sazae-san",
+        "producer": "Eiken",
+        "episodes": "? eps",
+        "airTime": "Oct 5, 1969, 18:30 (JST)",
+        "rating": "6.26"
+    }, {
+        "id": 88,
+        "title": "Chibi Maruko-chan (1995)",
+        "producer": "Nippon Animation",
+        "episodes": "? eps",
+        "airTime": "Jan 8, 1995, 18:00 (JST)",
+        "rating": "7.29"
+    }, {
+        "id": 89,
+        "title": "Kiratto Pri\u2606chan 2nd Season",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Apr 7, 2019, 10:00 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 90,
+        "title": "Duel Masters!!",
+        "producer": "Brain's Base, Shogakukan Music & Digital Entertainment",
+        "episodes": "? eps",
+        "airTime": "Apr 7, 2019, 08:30 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 91,
+        "title": "Aigan Kaijuu",
+        "producer": "Shimogumi",
+        "episodes": "? eps",
+        "airTime": "Oct 7, 2018, 06:54 (JST)",
+        "rating": "N/A"
+    }, {
+        "id": 92,
+        "title": "Caribadix 2nd Season",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Apr 1, 2018",
+        "rating": "N/A"
+    }, {
+        "id": 93,
+        "title": "Manul no Yuube",
+        "producer": "-",
+        "episodes": "? eps",
+        "airTime": "Nov 11, 2018",
+        "rating": "N/A"
+    }]
+}
