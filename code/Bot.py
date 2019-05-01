@@ -1,7 +1,9 @@
 from accounts import token
 import discord
 import json
+import datetime
 data2 = json.load(open('data.json', 'r'))
+userData = json.load(open('userData.json', 'r'))
 
 
 class MyClient(discord.Client):
@@ -14,7 +16,12 @@ class MyClient(discord.Client):
 
         if message.content.startswith('.'):
             await message.channel.send('pong')
-            await message.channel.send(data2['anime'][:5])
+            for anime in data2['anime'][:5]:
+                embed = discord.Embed(title=anime['title'],
+                                      description='Place holder',
+                                      colour=discord.Colour.blue())
+
+                await message.channel.send(embed=embed)
 
 
 ######Run Code#####

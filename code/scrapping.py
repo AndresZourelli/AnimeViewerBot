@@ -20,6 +20,7 @@ weekdays = [
 i = 1
 for day in weekdays:
     name_box = soup.findAll('div', attrs={'class': day})
+    dayInfo = name_box[0].find('div', attrs={'class': 'anime-header'})
     for value in name_box:
         allNames = value.findAll('div', attrs={'class': 'seasonal-anime'})
         for name in allNames:
@@ -40,7 +41,9 @@ for day in weekdays:
                 'airTime':
                 airTime.text.replace('\n', '').strip(),
                 'rating':
-                rating.text.replace('\n', '').strip()
+                rating.text.replace('\n', '').strip(),
+                'weekday':
+                dayInfo.text.replace('\n', '').strip()
             })
             print(title_tag.text, airTime.text)
             i += 1
