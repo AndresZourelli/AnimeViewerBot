@@ -29,24 +29,54 @@ for day in weekdays:
             episodes = name.find('div', attrs={'class': 'eps'})
             airTime = name.find('span', attrs={'class': 'remain-time'})
             rating = name.find('span', attrs={'class': 'score'})
-            data['anime'].append({
-                'id':
-                i,
-                'title':
-                title_tag.text.replace('\n', '').strip(),
-                'producer':
-                producer.text.replace('\n', '').strip(),
-                'episodes':
-                episodes.text.replace('\n', '').strip(),
-                'airTime':
-                airTime.text.replace('\n', '').strip(),
-                'rating':
-                rating.text.replace('\n', '').strip(),
-                'weekday':
-                dayInfo.text.replace('\n', '').strip()
-            })
-            print(title_tag.text, airTime.text)
-            i += 1
+            image = name.find('img')
+            description = name.find('span', attrs={'class': 'preline'})
+            try:
+                data['anime'].append({
+                    'id':
+                    i,
+                    'title':
+                    title_tag.text.replace('\n', '').strip(),
+                    'producer':
+                    producer.text.replace('\n', '').strip(),
+                    'episodes':
+                    episodes.text.replace('\n', '').strip(),
+                    'airTime':
+                    airTime.text.replace('\n', '').strip(),
+                    'rating':
+                    rating.text.replace('\n', '').strip(),
+                    'weekday':
+                    dayInfo.text.replace('\n', '').strip(),
+                    "image":
+                    image['src'],
+                    'description':
+                    description.text.replace('\n', '').strip(),
+                })
+
+                i += 1
+            except:
+                data['anime'].append({
+                    'id':
+                    i,
+                    'title':
+                    title_tag.text.replace('\n', '').strip(),
+                    'producer':
+                    producer.text.replace('\n', '').strip(),
+                    'episodes':
+                    episodes.text.replace('\n', '').strip(),
+                    'airTime':
+                    airTime.text.replace('\n', '').strip(),
+                    'rating':
+                    rating.text.replace('\n', '').strip(),
+                    'weekday':
+                    dayInfo.text.replace('\n', '').strip(),
+                    "image":
+                    image['data-src'],
+                    'description':
+                    description.text.replace('\n', '').strip(),
+                })
+
+                pass
 
 with open('data.json', 'w') as outfile:
     json.dump(data, outfile)

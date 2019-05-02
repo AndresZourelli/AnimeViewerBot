@@ -18,8 +18,9 @@ class MyClient(discord.Client):
             await message.channel.send('pong')
             for anime in data2['anime'][:5]:
                 embed = discord.Embed(title=anime['title'],
-                                      description='Place holder',
+                                      description=anime['description'],
                                       colour=discord.Colour.blue())
+                embed.set_image(url=anime['image'])
 
                 await message.channel.send(embed=embed)
 
