@@ -5,6 +5,7 @@ import datetime
 from discord.ext import commands
 data2 = json.load(open('data.json', 'r'))
 userData = json.load(open('userData.json', 'r'))
+userData['users'] = []
 
 client = commands.Bot(command_prefix='.')
 
@@ -86,13 +87,24 @@ async def on_message(message):
                                       description=anime['description'],
                                       colour=discord.Colour.blue())
                 embed.set_image(url=anime['image'])
-
                 await message.channel.send(embed=embed)
+    await client.process_commands(message)
 
 
 @client.event
 async def on_reaction_add(reaction, user):
-    print(reaction, user, reaction.message.author)
+    if str(reaction.emoji == '👍') and not any(
+            userInfo[user] == user for userInfo in userData['users']):
+        userData['users'].append({'user': user})
+        print(str(reaction), user, reaction.message.author)
+        print(userData)
+
+
+@client.command()
+async def dm(ctx):
+    user = client.get_user(138423304183611392)
+    print(ctx.author)
+    await user.send('ehllo')
 
 
 ######Run Code#####
