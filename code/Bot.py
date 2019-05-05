@@ -93,11 +93,27 @@ async def on_message(message):
 
 @client.event
 async def on_reaction_add(reaction, user):
+
     if str(reaction.emoji == '👍') and not any(
-            userInfo[user] == user for userInfo in userData['users']):
-        userData['users'].append({'user': user})
-        print(str(reaction), user, reaction.message.author)
+            int(userInfo.get('user', None)) == user.id
+            for userInfo in userData['users']):
+
+        for message in reaction.message.embeds:
+            print(str(message.title), user)
+            userData['users'].append({
+                'user': user.id,
+                'anime': [message.title]
+            })
         print(userData)
+    else:
+        for users in userData['users']:
+            if users['user'] == user.id:
+                for message in reaction.message.embeds:
+                    users['anime'].append(message.title)
+        print(userData)
+
+    with open('userData.json', 'w') as outfile:
+        json.dump(userData, outfile)
 
 
 @client.command()
