@@ -3,6 +3,7 @@ import discord
 import json
 import datetime
 from discord.ext import commands
+import asyncio
 data2 = json.load(open('data.json', 'r'))
 userData = json.load(open('userData.json', 'r'))
 userData['users'] = []
@@ -123,6 +124,14 @@ async def dm(ctx):
     await user.send('ehllo')
 
 
-######Run Code#####
+async def counts():
+    while True:
+        x = datetime.datetime.now()
+        print(x.strftime("%A"), x.strftime("%H"), x.strftime("%M"),
+              x.strftime("%S"))
+        await asyncio.sleep(1)
 
+
+######Run Code#####
+client.loop.create_task(counts())
 client.run(token)
