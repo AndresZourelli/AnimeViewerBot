@@ -109,12 +109,25 @@ async def on_reaction_add(reaction, user):
                 'anime': [message.title]
             })
         print(userData)
-    else:
+    elif str(reaction.emoji == '👍'):
         for users in userData['users']:
             if users['user'] == user.id:
                 for message in reaction.message.embeds:
                     users['anime'].append(message.title)
-        print(userData)
+    elif str(reaction.emoji == ':no_entry_sign:'):
+        for users in userData['users']:
+            if users['user'] == user.id:
+                for message in reaction.message.embeds:
+                    try:
+                        for items in users['anime']:
+                            if items == message.title:
+                                items.remove(message.title)
+                            await user.send('Anime successfully removed')
+                    except:
+                        await user.send("Anime not in list")
+    else:
+        print(reaction.emoji)
+        return
 
     with open('userData.json', 'w') as outfile:
         json.dump(userData, outfile)
@@ -127,12 +140,30 @@ async def dm(ctx):
     await user.send('ehllo')
 
 
+@client.command()
+async def myAnime(ctx):
+    currentUser = ctx.message.author.id
+    sendToUser = client.get_user(currentUser)
+    for user in userData['users']:
+        if currentUser == user['user']:
+            await sendToUser.send(
+                "Here are your the animes you are currently watching:")
+            for item in user['anime']:
+                for anime in data2['anime']:
+                    if anime['title'] == item:
+                        embed = discord.Embed(title=anime['title'],
+                                              description=anime['description'],
+                                              colour=discord.Colour.blue())
+                        embed.set_image(url=anime['image'])
+                        await sendToUser.send(embed=embed)
+
+
 async def counts():
     while True:
         x = datetime.now()
         print(x.strftime("%A"), x.strftime("%H"), x.strftime("%M"),
               x.strftime("%S"))
-        await asyncio.sleep(1)
+        await asyncio.sleep(60)
 
         if x.strftime("%A") == 'Monday':
             for anime in data2['anime']:
