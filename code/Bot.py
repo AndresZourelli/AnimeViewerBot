@@ -1,9 +1,11 @@
 from accounts import token
 import discord
 import json
-import datetime
+from datetime import datetime
 from discord.ext import commands
 import asyncio
+from pytz import timezone
+
 data2 = json.load(open('data.json', 'r'))
 userData = json.load(open('userData.json', 'r'))
 userData['users'] = []
@@ -126,10 +128,42 @@ async def dm(ctx):
 
 async def counts():
     while True:
-        x = datetime.datetime.now()
+        x = datetime.now()
         print(x.strftime("%A"), x.strftime("%H"), x.strftime("%M"),
               x.strftime("%S"))
         await asyncio.sleep(1)
+
+        if x.strftime("%A") == 'Monday':
+            print('tuesday')
+
+        if x.strftime("%A") == 'Tuesday':
+            for anime in data2['anime']:
+                if anime['weekday'] == 'Tuesday':
+                    time = anime['airTime'].split(',')
+                    animeShow = time[2].split()[0]
+                    tz = timezone('Asia/Kolkata')
+                    asiaTime = datetime.now().replace(tzinfo=tz)
+                    getTime = datetime.strptime(
+                        str(asiaTime.hour) + ':' + str(asiaTime.minute),
+                        '%H:%M').time()
+                    showtime = datetime.strptime(animeShow, '%H:%M').time()
+                    if getTime == showtime:
+                        '''Send message'''
+
+        if x.strftime("%A") == 'Wednesday':
+            print('tuesday')
+
+        if x.strftime("%A") == 'Thursday':
+            print('tuesday')
+
+        if x.strftime("%A") == 'Friday':
+            print('tuesday')
+
+        if x.strftime("%A") == 'Saturday':
+            print('tuesday')
+
+        if x.strftime("%A") == 'Sunday':
+            print('tuesday')
 
 
 ######Run Code#####
