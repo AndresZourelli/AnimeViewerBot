@@ -8,7 +8,8 @@ from pytz import timezone
 
 data2 = json.load(open('data.json', 'r'))
 userData = json.load(open('userData.json', 'r'))
-userData['users'] = []
+if not userData['users']:
+    userData['users'] = []
 
 client = commands.Bot(command_prefix='.')
 
@@ -134,7 +135,31 @@ async def counts():
         await asyncio.sleep(1)
 
         if x.strftime("%A") == 'Monday':
-            print('tuesday')
+            for anime in data2['anime']:
+                if anime['weekday'] == 'Monday':
+                    time = anime['airTime'].split(',')
+                    animeShow = time[2].split()[0]
+                    tz = timezone('Asia/Kolkata')
+                    asiaTime = datetime.now().replace(tzinfo=tz)
+                    getTime = datetime.strptime(
+                        str(asiaTime.hour) + ':' + str(asiaTime.minute),
+                        '%H:%M').time()
+                    showtime = datetime.strptime(animeShow, '%H:%M').time()
+                    # demoTime = datetime.strptime('21:54', '%H:%M').time()
+
+                    if getTime == showtime:
+                        for user in userData['users']:
+                            if anime['title'] in user['anime']:
+                                user = client.get_user(int(user['user']))
+                                embed = discord.Embed(
+                                    title=anime['title'],
+                                    description=anime['description'],
+                                    colour=discord.Colour.blue())
+                                embed.set_image(url=anime['image'])
+                                embed.set_author(
+                                    name='New Episode is about to be released!'
+                                )
+                                await user.send(embed=embed)
 
         if x.strftime("%A") == 'Tuesday':
             for anime in data2['anime']:
@@ -147,23 +172,156 @@ async def counts():
                         str(asiaTime.hour) + ':' + str(asiaTime.minute),
                         '%H:%M').time()
                     showtime = datetime.strptime(animeShow, '%H:%M').time()
+                    # demoTime = datetime.strptime('21:54', '%H:%M').time()
+
                     if getTime == showtime:
-                        '''Send message'''
+                        for user in userData['users']:
+                            if anime['title'] in user['anime']:
+                                user = client.get_user(int(user['user']))
+                                embed = discord.Embed(
+                                    title=anime['title'],
+                                    description=anime['description'],
+                                    colour=discord.Colour.blue())
+                                embed.set_image(url=anime['image'])
+                                embed.set_author(
+                                    name='New Episode is about to be released!'
+                                )
+                                await user.send(embed=embed)
 
         if x.strftime("%A") == 'Wednesday':
-            print('tuesday')
+            for anime in data2['anime']:
+                if anime['weekday'] == 'Wednesday':
+                    time = anime['airTime'].split(',')
+                    animeShow = time[2].split()[0]
+                    tz = timezone('Asia/Kolkata')
+                    asiaTime = datetime.now().replace(tzinfo=tz)
+                    getTime = datetime.strptime(
+                        str(asiaTime.hour) + ':' + str(asiaTime.minute),
+                        '%H:%M').time()
+                    showtime = datetime.strptime(animeShow, '%H:%M').time()
+                    # demoTime = datetime.strptime('21:54', '%H:%M').time()
+
+                    if getTime == showtime:
+                        for user in userData['users']:
+                            if anime['title'] in user['anime']:
+                                user = client.get_user(int(user['user']))
+                                embed = discord.Embed(
+                                    title=anime['title'],
+                                    description=anime['description'],
+                                    colour=discord.Colour.blue())
+                                embed.set_image(url=anime['image'])
+                                embed.set_author(
+                                    name='New Episode is about to be released!'
+                                )
+                                await user.send(embed=embed)
 
         if x.strftime("%A") == 'Thursday':
-            print('tuesday')
+            for anime in data2['anime']:
+                if anime['weekday'] == 'Thursday':
+                    time = anime['airTime'].split(',')
+                    animeShow = time[2].split()[0]
+                    tz = timezone('Asia/Kolkata')
+                    asiaTime = datetime.now().replace(tzinfo=tz)
+                    getTime = datetime.strptime(
+                        str(asiaTime.hour) + ':' + str(asiaTime.minute),
+                        '%H:%M').time()
+                    showtime = datetime.strptime(animeShow, '%H:%M').time()
+                    # demoTime = datetime.strptime('21:54', '%H:%M').time()
+
+                    if getTime == showtime:
+                        for user in userData['users']:
+                            if anime['title'] in user['anime']:
+                                user = client.get_user(int(user['user']))
+                                embed = discord.Embed(
+                                    title=anime['title'],
+                                    description=anime['description'],
+                                    colour=discord.Colour.blue())
+                                embed.set_image(url=anime['image'])
+                                embed.set_author(
+                                    name='New Episode is about to be released!'
+                                )
+                                await user.send(embed=embed)
 
         if x.strftime("%A") == 'Friday':
-            print('tuesday')
+            for anime in data2['anime']:
+                if anime['weekday'] == 'Friday':
+                    time = anime['airTime'].split(',')
+                    animeShow = time[2].split()[0]
+                    tz = timezone('Asia/Kolkata')
+                    asiaTime = datetime.now().replace(tzinfo=tz)
+                    getTime = datetime.strptime(
+                        str(asiaTime.hour) + ':' + str(asiaTime.minute),
+                        '%H:%M').time()
+                    showtime = datetime.strptime(animeShow, '%H:%M').time()
+                    # demoTime = datetime.strptime('21:54', '%H:%M').time()
+
+                    if getTime == showtime:
+                        for user in userData['users']:
+                            if anime['title'] in user['anime']:
+                                user = client.get_user(int(user['user']))
+                                embed = discord.Embed(
+                                    title=anime['title'],
+                                    description=anime['description'],
+                                    colour=discord.Colour.blue())
+                                embed.set_image(url=anime['image'])
+                                embed.set_author(
+                                    name='New Episode is about to be released!'
+                                )
+                                await user.send(embed=embed)
 
         if x.strftime("%A") == 'Saturday':
-            print('tuesday')
+            for anime in data2['anime']:
+                if anime['weekday'] == 'Saturday':
+                    time = anime['airTime'].split(',')
+                    animeShow = time[2].split()[0]
+                    tz = timezone('Asia/Kolkata')
+                    asiaTime = datetime.now().replace(tzinfo=tz)
+                    getTime = datetime.strptime(
+                        str(asiaTime.hour) + ':' + str(asiaTime.minute),
+                        '%H:%M').time()
+                    showtime = datetime.strptime(animeShow, '%H:%M').time()
+                    # demoTime = datetime.strptime('21:54', '%H:%M').time()
+
+                    if getTime == showtime:
+                        for user in userData['users']:
+                            if anime['title'] in user['anime']:
+                                user = client.get_user(int(user['user']))
+                                embed = discord.Embed(
+                                    title=anime['title'],
+                                    description=anime['description'],
+                                    colour=discord.Colour.blue())
+                                embed.set_image(url=anime['image'])
+                                embed.set_author(
+                                    name='New Episode is about to be released!'
+                                )
+                                await user.send(embed=embed)
 
         if x.strftime("%A") == 'Sunday':
-            print('tuesday')
+            for anime in data2['anime']:
+                if anime['weekday'] == 'Sunday':
+                    time = anime['airTime'].split(',')
+                    animeShow = time[2].split()[0]
+                    tz = timezone('Asia/Kolkata')
+                    asiaTime = datetime.now().replace(tzinfo=tz)
+                    getTime = datetime.strptime(
+                        str(asiaTime.hour) + ':' + str(asiaTime.minute),
+                        '%H:%M').time()
+                    showtime = datetime.strptime(animeShow, '%H:%M').time()
+                    # demoTime = datetime.strptime('21:54', '%H:%M').time()
+
+                    if getTime == showtime:
+                        for user in userData['users']:
+                            if anime['title'] in user['anime']:
+                                user = client.get_user(int(user['user']))
+                                embed = discord.Embed(
+                                    title=anime['title'],
+                                    description=anime['description'],
+                                    colour=discord.Colour.blue())
+                                embed.set_image(url=anime['image'])
+                                embed.set_author(
+                                    name='New Episode is about to be released!'
+                                )
+                                await user.send(embed=embed)
 
 
 ######Run Code#####
