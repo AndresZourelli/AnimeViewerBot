@@ -24,7 +24,9 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('.monday'):
+    if message.content.startswith('.mon'):
+        await message.channel.send(
+            "Please use 👍 to add an anime and 🚫 to delete it from your list")
         for anime in data2['anime']:
             if anime['weekday'] == 'Monday':
                 embed = discord.Embed(title=anime['title'],
@@ -34,7 +36,9 @@ async def on_message(message):
 
                 await message.channel.send(embed=embed)
 
-    if message.content.startswith('.tuesday'):
+    if message.content.startswith('.tues'):
+        await message.channel.send(
+            "Please use 👍 to add an anime and 🚫 to delete it from your list")
         for anime in data2['anime']:
             if anime['weekday'] == 'Tuesday':
                 embed = discord.Embed(title=anime['title'],
@@ -44,7 +48,9 @@ async def on_message(message):
 
                 await message.channel.send(embed=embed)
 
-    if message.content.startswith('.wednesday'):
+    if message.content.startswith('.wed'):
+        await message.channel.send(
+            "Please use 👍 to add an anime and 🚫 to delete it from your list")
         for anime in data2['anime']:
             if anime['weekday'] == 'Wednesday':
                 embed = discord.Embed(title=anime['title'],
@@ -54,7 +60,9 @@ async def on_message(message):
 
                 await message.channel.send(embed=embed)
 
-    if message.content.startswith('.thursday'):
+    if message.content.startswith('.thurs'):
+        await message.channel.send(
+            "Please use 👍 to add an anime and 🚫 to delete it from your list")
         for anime in data2['anime']:
             if anime['weekday'] == 'Thursday':
                 embed = discord.Embed(title=anime['title'],
@@ -64,7 +72,9 @@ async def on_message(message):
 
                 await message.channel.send(embed=embed)
 
-    if message.content.startswith('.friday'):
+    if message.content.startswith('.fri'):
+        await message.channel.send(
+            "Please use 👍 to add an anime and 🚫 to delete it from your list")
         for anime in data2['anime']:
             if anime['weekday'] == 'Friday':
                 embed = discord.Embed(title=anime['title'],
@@ -74,7 +84,9 @@ async def on_message(message):
 
                 await message.channel.send(embed=embed)
 
-    if message.content.startswith('.saturday'):
+    if message.content.startswith('.sat'):
+        await message.channel.send(
+            "Please use 👍 to add an anime and 🚫 to delete it from your list")
         for anime in data2['anime']:
             if anime['weekday'] == 'Saturday':
                 embed = discord.Embed(title=anime['title'],
@@ -84,7 +96,9 @@ async def on_message(message):
 
                 await message.channel.send(embed=embed)
 
-    if message.content.startswith('.sunday'):
+    if message.content.startswith('.sun'):
+        await message.channel.send(
+            "Please use 👍 to add an anime and 🚫 to delete it from your list")
         for anime in data2['anime']:
             if anime['weekday'] == 'Sunday':
                 embed = discord.Embed(title=anime['title'],
@@ -98,46 +112,40 @@ async def on_message(message):
 @client.event
 async def on_reaction_add(reaction, user):
 
-    if str(reaction.emoji == '👍') and not any(
+    if (reaction.emoji == '👍') and not any(
             int(userInfo.get('user', None)) == user.id
             for userInfo in userData['users']):
-
         for message in reaction.message.embeds:
             print(str(message.title), user)
             userData['users'].append({
                 'user': user.id,
                 'anime': [message.title]
             })
-        print(userData)
-    elif str(reaction.emoji == '👍'):
+
+    elif (reaction.emoji == '👍'):
         for users in userData['users']:
             if users['user'] == user.id:
                 for message in reaction.message.embeds:
                     users['anime'].append(message.title)
-    elif str(reaction.emoji == ':no_entry_sign:'):
+
+    elif (reaction.emoji == '🚫'):
         for users in userData['users']:
             if users['user'] == user.id:
                 for message in reaction.message.embeds:
                     try:
                         for items in users['anime']:
                             if items == message.title:
-                                items.remove(message.title)
-                            await user.send('Anime successfully removed')
+                                users['anime'].remove(message.title)
+                                await user.send('Anime successfully removed')
                     except:
                         await user.send("Anime not in list")
     else:
-        print(reaction.emoji)
-        return
+        await user.send(
+            f"{reaction.emoji} is not the correct reactions for this bot")
+        await user.send("Please user 👍 to add an anime and 🚫 to delete it")
 
     with open('userData.json', 'w') as outfile:
         json.dump(userData, outfile)
-
-
-@client.command()
-async def dm(ctx):
-    user = client.get_user(138423304183611392)
-    print(ctx.author)
-    await user.send('ehllo')
 
 
 @client.command()
