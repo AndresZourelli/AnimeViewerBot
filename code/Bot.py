@@ -141,8 +141,8 @@ async def on_reaction_add(reaction, user):
                         await user.send("Anime not in list")
     else:
         await user.send(
-            f"{reaction.emoji} is not the correct reactions for this bot")
-        await user.send("Please user 👍 to add an anime and 🚫 to delete it")
+            f"{reaction.emoji} is not the correct reaction for this bot")
+        await user.send("Please use 👍 to add an anime and 🚫 to delete it")
 
     with open('userData.json', 'w') as outfile:
         json.dump(userData, outfile)
@@ -154,14 +154,14 @@ async def myAnime(ctx):
     sendToUser = client.get_user(currentUser)
     for user in userData['users']:
         if currentUser == user['user']:
-            await sendToUser.send(
-                "Here are your the animes you are currently watching:")
+            await sendToUser.send("Here are the animes currently in your list:"
+                                  )
             for item in user['anime']:
                 for anime in data2['anime']:
                     if anime['title'] == item:
                         embed = discord.Embed(title=anime['title'],
                                               description=anime['description'],
-                                              colour=discord.Colour.blue())
+                                              colour=discord.Colour.purple())
                         embed.set_image(url=anime['image'])
                         await sendToUser.send(embed=embed)
 
@@ -193,7 +193,7 @@ async def counts():
                                 embed = discord.Embed(
                                     title=anime['title'],
                                     description=anime['description'],
-                                    colour=discord.Colour.blue())
+                                    colour=discord.Colour.red())
                                 embed.set_image(url=anime['image'])
                                 embed.set_author(
                                     name='New Episode is about to be released!'
@@ -220,7 +220,7 @@ async def counts():
                                 embed = discord.Embed(
                                     title=anime['title'],
                                     description=anime['description'],
-                                    colour=discord.Colour.blue())
+                                    colour=discord.Colour.red())
                                 embed.set_image(url=anime['image'])
                                 embed.set_author(
                                     name='New Episode is about to be released!'
@@ -247,7 +247,7 @@ async def counts():
                                 embed = discord.Embed(
                                     title=anime['title'],
                                     description=anime['description'],
-                                    colour=discord.Colour.blue())
+                                    colour=discord.Colour.red())
                                 embed.set_image(url=anime['image'])
                                 embed.set_author(
                                     name='New Episode is about to be released!'
@@ -274,7 +274,7 @@ async def counts():
                                 embed = discord.Embed(
                                     title=anime['title'],
                                     description=anime['description'],
-                                    colour=discord.Colour.blue())
+                                    colour=discord.Colour.red())
                                 embed.set_image(url=anime['image'])
                                 embed.set_author(
                                     name='New Episode is about to be released!'
@@ -301,7 +301,7 @@ async def counts():
                                 embed = discord.Embed(
                                     title=anime['title'],
                                     description=anime['description'],
-                                    colour=discord.Colour.blue())
+                                    colour=discord.Colour.red())
                                 embed.set_image(url=anime['image'])
                                 embed.set_author(
                                     name='New Episode is about to be released!'
@@ -328,7 +328,7 @@ async def counts():
                                 embed = discord.Embed(
                                     title=anime['title'],
                                     description=anime['description'],
-                                    colour=discord.Colour.blue())
+                                    colour=discord.Colour.red())
                                 embed.set_image(url=anime['image'])
                                 embed.set_author(
                                     name='New Episode is about to be released!'
@@ -355,7 +355,7 @@ async def counts():
                                 embed = discord.Embed(
                                     title=anime['title'],
                                     description=anime['description'],
-                                    colour=discord.Colour.blue())
+                                    colour=discord.Colour.red())
                                 embed.set_image(url=anime['image'])
                                 embed.set_author(
                                     name='New Episode is about to be released!'
