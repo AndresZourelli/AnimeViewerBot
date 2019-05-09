@@ -24,6 +24,11 @@ async def on_message(message):
     if message.author == client.user:
         return
 
+    if message.content.startswith('.help'):
+        await message.channel.send(
+            'To see what animes are in this current seaseon use the following commands:\n Monday: .mon,\n Tuesday: .tues,\n Wednesday: .wed,\n Thursday: .thurs,\n Friday: .fri,\n Saturday: .sat,\n Sunday: .sun\n To get a list of your currently added anime user .myAnime\n To add or delete anime use 👍 to add an anime and 🚫 to delete it from your list'
+        )
+
     if message.content.startswith('.mon'):
         await message.channel.send(
             "Please use 👍 to add an anime and 🚫 to delete it from your list")
