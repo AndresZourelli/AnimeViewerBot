@@ -26,7 +26,7 @@ async def on_message(message):
 
     if message.content.startswith('.help'):
         await message.channel.send(
-            'To see what animes are in this current seaseon use the following commands:\n Monday: .mon,\n Tuesday: .tues,\n Wednesday: .wed,\n Thursday: .thurs,\n Friday: .fri,\n Saturday: .sat,\n Sunday: .sun\n To get a list of your currently added anime user .myAnime\n To add or delete anime use 👍 to add an anime and 🚫 to delete it from your list'
+            'To see what animes are in this current seaseon use the following commands:\n\n Monday: .mon,\n\n Tuesday: .tues,\n\n Wednesday: .wed,\n\n Thursday: .thurs,\n\n Friday: .fri,\n\n Saturday: .sat,\n\n Sunday: .sun\n\n To get a list of your currently added anime user .myAnime\n\n To add or delete anime use 👍 to add an anime and 🚫 to delete it from your list'
         )
 
     if message.content.startswith('.mon'):
@@ -173,7 +173,9 @@ async def myAnime(ctx):
 
 async def counts():
     while True:
-        x = datetime.now()
+        tz = timezone('Asia/Tokyo')
+        x = datetime.now(tz)
+        print(x)
         print(x.strftime("%A"), x.strftime("%H"), x.strftime("%M"),
               x.strftime("%S"))
         await asyncio.sleep(60)
@@ -183,8 +185,8 @@ async def counts():
                 if anime['weekday'] == 'Monday':
                     time = anime['airTime'].split(',')
                     animeShow = time[2].split()[0]
-                    tz = timezone('Asia/Kolkata')
-                    asiaTime = datetime.now().replace(tzinfo=tz)
+                    tz = timezone('Asia/Tokyo')
+                    asiaTime = datetime.now(tz)
                     getTime = datetime.strptime(
                         str(asiaTime.hour) + ':' + str(asiaTime.minute),
                         '%H:%M').time()
