@@ -24,6 +24,6 @@ To Add a Show to Your List Just React to the Message With a 👍 to add and 🚫
 
 ## Technologies Used
 
--Discord API
--Python
--JSON
+- Discord API
+- Python
+- JSON
