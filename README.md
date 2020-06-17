@@ -21,3 +21,9 @@ To See your list of shows
 ```
 
 To Add a Show to Your List Just React to the Message With a 👍 to add and 🚫 to delete it from your list.
+
+## Technologies Used
+
+-Discord API
+-Python
+-JSON
